@@ -1,0 +1,141 @@
+.aboutPage {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 40px;
+}
+.aboutImage {
+  flex-basis: 50%;
+}
+.aboutImg {
+  display: block;
+  aspect-ratio: 4/5;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.aboutContent {
+  flex-basis: 75%;
+}
+.aboutContent p {
+  line-height: 1.5;
+}
+.aboutContent .para2 {
+  margin: 20px 0 40px;
+}
+
+/* Skill List */
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+.skillList {
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+.skillList .skill {
+  min-width: 100px;
+}
+
+.skillList:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.skillList hr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  background: linear-gradient(to right, #1f9906, #634205);
+}
+.aboutRating {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 70px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.divider {
+  height: 60px;
+  width: 5px;
+  background: #fff;
+}
+.experience {
+  transition: 0.5s;
+  cursor: pointer;
+}
+.experience:hover {
+  transform: scale(1.1);
+}
+.experience .years {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  background: linear-gradient(to right, #1f9906, #634205);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.5s;
+}
+
+@media (max-width: 1000px) {
+  .aboutPage {
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    padding: 10px 30px;
+  }
+  .aboutImg {
+    display: none;
+  }
+  .skillList .skill {
+    min-width: 200px;
+  }
+  .divider {
+    height: 120px;
+  }
+  .experience .years {
+    font-size: 3.5rem;
+  }
+  .experience .text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 850px) {
+  .skills {
+    margin-top: 30px;
+  }
+  .aboutContent .para2,
+  .aboutContent .para1 {
+    min-width: 760px;
+  }
+  .aboutContent .para2 {
+    margin-bottom: 10px;
+  }
+  .experience .text {
+    width: 130px;
+    margin: 0 auto;
+  }
+  .divider {
+    height: 150px;
+    margin: 0 auto;
+  }
+  .aboutRating {
+    margin: 0 20px;
+    margin-top: 0 auto;
+  }
+}
+@media (max-width: 700px) {
+  .aboutPage {
+    font-size: 30px;
+  }
+  .experience .years {
+    font-size: 3rem;
+  }
+}

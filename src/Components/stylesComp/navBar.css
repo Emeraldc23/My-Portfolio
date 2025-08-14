@@ -1,0 +1,99 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+  position: relative;
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navList li {
+  list-style: none;
+  margin-right: 25px;
+}
+.navList li p {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+}
+.navList li img {
+  display: flex;
+  margin: auto;
+}
+.navBtn .btn1 {
+  background: linear-gradient(to right, #1f9906, #634205);
+}
+.btn1:hover {
+  transform: scale(1.1);
+}
+
+.anchor-Link {
+  text-decoration: none;
+  color: #fff;
+}
+.menuClose {
+  display: none;
+}
+.menus {
+  display: none;
+}
+@media (max-width: 2000px) {
+  .navBar {
+    margin: 30px 20px;
+  }
+  .navBtn .btn1 {
+    font-size: 20px;
+  }
+  .navList li p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 920px) {
+  .navBar {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 850px) {
+  .navBar {
+    justify-content: space-between;
+    margin: 20px;
+  }
+  .navBtn .btn1 {
+    display: none;
+  }
+  .menus {
+    position: fixed;
+    right: 30px;
+    display: block;
+    cursor: pointer;
+  }
+  .menuClose {
+    display: block;
+    left: 120px;
+    top: 50px;
+    position: relative;
+    width: 30px;
+  }
+  .navList {
+    flex-direction: column;
+    gap: 30px;
+    justify-content: start;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background: rgb(2, 51, 2);
+    width: 350px;
+    height: 100%;
+    transition: right 0.5s;
+    right: -350px;
+  }
+  .navList li p {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,100 @@
+.homePage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profilePics {
+  display: block;
+  width: 450px;
+  aspect-ratio: 3/3;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0px 0 20px;
+}
+
+.contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contents h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  width: 70%;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.colorHeader {
+  background: linear-gradient(to right, #1f9906, #634205);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contents p {
+  font-size: 20px;
+  width: 70%;
+  line-height: 40px;
+}
+
+.btns {
+  margin: 20px 0;
+}
+.btns .btn1 {
+  background: linear-gradient(to right, #1f9906, #634205);
+}
+.btns .btn2 {
+  padding: 10px 30px;
+  margin-left: 20px;
+  border: 2px solid #fff;
+}
+.btns .btn2:hover {
+  transform: scale(1.1);
+  border-color: rgb(8, 78, 8);
+}
+.btns .btn1:hover {
+  border: 2px solid #fff;
+}
+@media (max-width: 1000px) {
+  .contents p {
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .contents h2 {
+    font-size: 30px;
+  }
+  .profilePics {
+    width: 500px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin: 20px 0 20px;
+  }
+  .homePage {
+    display: flex;
+  }
+
+  .btns .btn2,
+  .btns .btn1 {
+    font-size: 20px;
+    padding: 20px 35px;
+  }
+}
+@media (max-width: 700px) {
+  .contents h2 {
+    font-size: 35px;
+  }
+  .contents p {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  .btns .btn2,
+  .btns .btn1 {
+    font-size: 25px;
+  }
+}
