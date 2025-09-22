@@ -3,7 +3,7 @@ import underLine from "../assets/image/nav_underline.svg";
 import { useRef, useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { Link } from "react-router-dom";
-import WatchOut from "./WatchOut";
+import mainLogo from "../assets/image/bgLogo.png";
 import logo from "../assets/image/logo.svg";
 import menuOpen from "../assets/image/menu_open.svg";
 import menuClose from "../assets/image/menu_close.svg";
@@ -22,7 +22,7 @@ const NavBar = () => {
   return (
     <div className="navBar">
       <div className="logo">
-        <img src={logo} alt="" />
+        <img src={mainLogo} alt="" />
       </div>
 
       <img onClick={openMenu} src={menuOpen} alt="" className="menus" />
