@@ -2,6 +2,8 @@ import "./stylesComp/navBar.css";
 import underLine from "../assets/image/nav_underline.svg";
 import { useRef, useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Link } from "react-router-dom";
+import WatchOut from "./WatchOut";
 import logo from "../assets/image/logo.svg";
 import menuOpen from "../assets/image/menu_open.svg";
 import menuClose from "../assets/image/menu_close.svg";

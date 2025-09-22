@@ -1,0 +1,15 @@
+.watchOut {
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-watch {
+  background: linear-gradient(to right, #1f9906, #634205);
+  margin-top: 10px;
+}
